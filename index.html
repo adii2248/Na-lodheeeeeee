@@ -1,10 +1,3 @@
-<div id="countdownScreen">
-    <div class="countdown-box">
-        <h2>Po afron një moment i veçantë ❤️</h2>
-        <div id="countdown">Loading...</div>
-        <p>Durim edhe pak...</p>
-    </div>
-</div>
 <!DOCTYPE html>
 <html lang="sq">
 <head>
@@ -13,7 +6,20 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+</head>
+<body>
 
+<!-- COUNTDOWN -->
+<div id="countdownScreen">
+    <div class="countdown-box">
+        <h2>Po afron një moment i veçantë ❤️</h2>
+        <div id="countdown">Loading...</div>
+        <p>Durim edhe pak...</p>
+    </div>
+</div>
+
+<!-- START SCREEN -->
+<div id="startScreen">
 <!-- START SCREEN -->
 <div id="startScreen">
   <p>Nuk besoj se është surpriza jote më e bukur për ditëlindje, por të premtoj se është diçka me gjithë zemër 💌</p>
@@ -52,5 +58,27 @@
 </audio>
 
 <script src="script.js"></script>
+<script>
+const birthday = new Date("Feb 25, 2026 00:00:00").getTime();
+
+const timer = setInterval(function() {
+
+  const now = new Date().getTime();
+  const distance = birthday - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML =
+    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(timer);
+    document.getElementById("countdownScreen").style.display="none";
+  }
+}, 1000);
+</script>
 </body>
 </html>
