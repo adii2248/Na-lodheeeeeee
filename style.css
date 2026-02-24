@@ -88,8 +88,6 @@ body{
 }
 
 #finalMessage{
- position:absolute;top:50%;left:50%;
- transform:translate(-50%,-50%);
  font-size:32px;
  color:#ff1a66;
  line-height:1.6;
