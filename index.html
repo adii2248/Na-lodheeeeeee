@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Surprizë për Nuçin ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- START SCREEN -->
+<div id="startScreen">
+  <p>Nuk besoj se është surpriza jote më e bukur për ditëlindje, por të premtoj se është diçka me gjithë zemër 💌</p>
+  <div class="inbox-icon">📩</div>
+  <p>Kliko këtu</p>
+</div>
+
+<!-- SHKRIMI ROMANTIK -->
+<div id="romanticScreen" class="hidden">
+  <div id="romanticText"></div>
+</div>
+
+<!-- TABELA INTERAKTIVE (Error 404) -->
+<div id="choiceScreen" class="hidden">
+  <div class="error-box">
+    <h1>404 Error</h1>
+    <p>Ms Dajana Istrefi deshiron të dalesh për darkë me mua në këtë ditë të lumtur të jetës tënde?</p>
+    <div class="buttons">
+      <button id="yesBtn">PO</button>
+      <button id="noBtn">JO</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOTO + NENSHKRIM -->
+<div id="photoScreen" class="hidden">
+  <img src="nuci.JPG" class="photo-big">
+  <h2 id="photoText"></h2>
+</div>
+
+<!-- MESAZHI FINAL -->
+<div id="finalMessage" class="hidden">
+  <h2>Gëzuar ditëlindjen Nuçi im i vogël. Po rritemi bashkë dhe shpresoj të plakemi bashkë.<br>Je t’aime ma vie ❤️</h2>
+</div>
+
+<canvas id="effects"></canvas>
+
+<audio id="music" loop>
+<source src="https://cdn.pixabay.com/audio/2022/03/15/audio_c8c8a73467.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
