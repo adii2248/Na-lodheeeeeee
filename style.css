@@ -1,0 +1,98 @@
+body{
+ background: linear-gradient(to bottom, #ffd6e0, #ffb3c6);
+ color:#ff1a66;
+ font-family:"Georgia", serif;
+ margin:0; overflow:hidden;
+ text-align:center;
+}
+
+.hidden{display:none;}
+
+#startScreen{
+ position:absolute; top:50%; left:50%;
+ transform:translate(-50%,-50%);
+ cursor:pointer;
+ font-size:26px;
+ font-weight:bold;
+ color:#ff3366;
+}
+
+.inbox-icon{
+ font-size:70px;
+ margin:20px 0;
+}
+
+#romanticScreen{
+ position:absolute; top:50%; left:50%;
+ transform:translate(-50%,-50%);
+ width:80%;
+ max-width:900px;
+ color:#ff1a66;
+ font-size:28px;
+ line-height:2;
+}
+
+.error-box{
+ background:#fff0f5;
+ border:3px solid #ff4d88;
+ padding:40px;
+ border-radius:20px;
+ width:80%;
+ max-width:600px;
+ margin:0 auto;
+}
+
+.error-box h1{
+ font-size:50px;
+ color:#ff3366;
+}
+
+.error-box p{
+ font-size:24px;
+ margin:20px 0;
+}
+
+.buttons button{
+ padding:15px 30px;
+ margin:15px;
+ font-size:22px;
+ background:#ff4d88;
+ border:none;color:white; border-radius:12px; cursor:pointer;
+ transition:.3s;
+}
+.buttons button:hover{
+ transform:scale(1.2);
+ box-shadow:0 0 25px #ff4d88;
+}
+
+#photoScreen{
+ position:absolute; top:50%; left:50%;
+ transform:translate(-50%,-50%);
+ text-align:center;
+}
+
+.photo-big{
+ width:650px;
+ max-width:90%;
+ border-radius:25px;
+ box-shadow:0 0 80px #ff4d88;
+ opacity:0;
+ transform:scale(0);
+ transition: all 1s ease-in-out;
+}
+
+#photoText{
+ color:#ff1a66;
+ font-size:30px;
+ margin-top:20px;
+}
+
+#finalMessage{
+ position:absolute;top:50%;left:50%;
+ transform:translate(-50%,-50%);
+ font-size:32px;
+ color:#ff1a66;
+ line-height:1.6;
+}
+
+canvas{position:fixed; top:0; left:0; pointer-events:none;}
